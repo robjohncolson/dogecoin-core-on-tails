@@ -1,0 +1,1 @@
+myvar=$(basename "$PWD"); gh repo create $myvar --public; git init; echo "# $myvar" >> README.md; git add README.md; git commit -m "first commit"; git remote add origin git@github.com:robjohncolson/$myvar.git; git push -u origin master; git add .; git commit -m "2nd commit"; git push
